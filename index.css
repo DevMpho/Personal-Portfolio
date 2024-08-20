@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.navbar {
+    background: linear-gradient(to right, #ff6699, #ff9900); /* Replace with your chosen gradient */
+  }
+  .intro {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .intro h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333; /* Adjust color to your preference */
+    white-space: nowrap;
+     /* Hides the text until it's typed */
+    
+    width: 0;
+  }
+  
