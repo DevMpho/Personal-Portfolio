@@ -8,7 +8,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 .timeline-section{
-	background-color: #24292d;
+	background-color: #333;
 	min-height: 100vh;
 	padding: 100px 15px;
 }
@@ -45,22 +45,42 @@ body{
 .timeline-dot{
 	height: 16px;
 	width: 16px;
-	background-color: #eaa023;
+	background-color: #e61de9;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
 	top:10px;
+	
 }
 .timeline-date{
 	font-size: 18px;
-	color: #eaa023;
+	color: #acb3f3;
 	margin:6px 0 15px;
 }
 .timeline-content{
     background-color: #2f363e;
 	padding: 30px;
 	border-radius: 5px;
+	background: linear-gradient(#212121, #212121) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    animation: gradient 5s ease infinite;
+    border: 3px solid transparent;
+	box-sizing: border-box;
+    border-radius: 10px;
 }
+
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+}
+
 .timeline-content h3{
     font-size: 20px;
 	color: #ffffff;
@@ -91,4 +111,27 @@ body{
 	.timeline-dot{
 		left:0;
 	}
+}
+
+.education-header-container {
+	margin-top: 20px;
+	margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+    h5 {
+        color: #C7CECA;
+        line-height: 1.9;
+        font-size: 26px;
+        font-family: 'poppins-bold';
+    }
+
+    h6 {
+        font-family: 'lora-regular', serif;
+        color: white;
+        line-height: 1.8;
+    }
 }
