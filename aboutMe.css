@@ -1,13 +1,30 @@
+.about-me-skills-container {
+    border-radius: 50%;
+}
+
 .center-text {
-    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
 }
-.center-text h1,h3,p {
+.center-text .fill{
     
+    background: linear-gradient(to right, #ff99cc, #ffff99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.profile .fill {
+    background: linear-gradient(to right, #ff99cc, #ffff99);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+}
+.skills .fill {
     background: linear-gradient(to right, #ff99cc, #ffff99);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -28,6 +45,37 @@
     min-height: 300px; /* Ensure a minimum height */
     border: 1px solid #ccc;
     width: 100%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 3000px) {
+    .profile-skills {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile-skills {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 900) {
+    .profile-skills {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-skills {
+        flex-wrap: wrap;
+    }
+}
+
+.profile {
+    line-height: 1.9;
+    font-size: 17px;
 }
 
 .profile, .skills {
@@ -36,13 +84,20 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .skills ul {
     list-style: none;
+    width: 100%;
 }
 .skills {
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.about-actions-buttons {
+    padding: 0;
 }
 
 .skills li {
