@@ -1,142 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mpho | Portfolio</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <style>
-    /* Ensure the body covers the full height of the viewport */
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mpho | Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* Ensure the body covers the full height of the viewport */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-    /* Navbar settings */
-    .navbar {
-      height: 80px; /* Set a fixed height for the navbar */
-      z-index: 1000; /* Ensure it stays on top of other elements */
-    }
-
-    .navbar-brand img {
-        height: auto; /* Maintain aspect ratio */
-  max-height: 80px; /* Control the maximum height of the logo */
-  width: 100%;  /* Maximum height for the logo */
-    }
-
-    .navbar-toggler {
-      order: 1;
-    }
-
-    .navbar-collapse {
-      order: 2;
-    }
-
-    .ms-auto {
-      margin-left: auto;
-    }
-
-    /* Introduction section */
-    section {
-      min-height: 100vh; /* Ensure the section takes up at least the full height of the viewport */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 80px; /* Prevent content from being hidden behind the fixed navbar */
-      background-color: #f8f9fa; /* Optional background color */
-      text-align: center; /* Center-align the text */
-    }
-
-    .intro h1 {
-      font-size: 36px;
-      font-weight: bold;
-      color: #333; /* Adjust color to your preference */
-    }
-
-    .intro p {
-      font-size: 18px;
-      color: #666; /* Adjust color to your preference */
-      margin-top: 20px; /* Add space between the h1 and the paragraph */
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+      /* Navbar settings */
       .navbar {
-        height: 60px;
-      }
-      
-      .intro h1 {
-        font-size: 28px; /* Smaller font size for mobile */
+        height: 80px; /* Set a fixed height for the navbar */
+        
       }
 
-      .intro p {
-        font-size: 16px; /* Smaller font size for mobile */
-      }
-    }
-
-    @media (max-width: 576px) {
       .navbar-brand img {
-        max-height: 40px; /* Smaller logo for very small screens */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 80px; /* Control the maximum height of the logo */
+        width: 100%; /* Maximum height for the logo */
       }
 
-      .intro h1 {
-        font-size: 24px; /* Smaller font size for mobile */
+      .navbar-toggler {
+        order: 1;
       }
 
-      .intro p {
-        font-size: 14px; /* Smaller font size for mobile */
+      .navbar-collapse {
+        order: 2;
       }
-    }
-  </style>
-</head>
-<body>
 
-  <!-- Navigation bar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- Logo on the left -->
-      <a class="navbar-brand" href="index.html">
-        <img src="My-logo.png" alt="Logo">
-      </a>
-      <!-- Button for toggling the navbar on smaller screens, positioned on the top right -->
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Navbar links on the right -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="AboutMe.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ContactMe.html">Contact Me</a>
-          </li>
-        </ul>
+      .ms-auto {
+        margin-left: auto;
+      }
+
+      /* Introduction section */
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .navbar {
+          height: 60px;
+        }
+        .navbar .menu {
+          background: white;
+          opacity: o.9;
+          margin-top: 3px;
+          padding-left: 7px;
+        }
+
+        .intro h1 {
+          font-size: 28px; /* Smaller font size for mobile */
+        }
+
+        .intro p {
+          font-size: 16px; /* Smaller font size for mobile */
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar-brand img {
+          max-height: 40px; /* Smaller logo for very small screens */
+        }
+        .navbar .menu {
+          background: white;
+          opacity: o.9;
+          margin-top: 3px;
+          padding-left: 7px;
+        }
+
+        .intro h1 {
+          font-size: 24px; /* Smaller font size for mobile */
+        }
+
+        .intro p {
+          font-size: 14px; /* Smaller font size for mobile */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="home.html">
+          <img src="my-logo2.png" alt="Logo" />
+        </a>
+        <!-- Button for toggling the navbar on smaller screens, positioned on the top right -->
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links on the right -->
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutMe.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Education.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactMe.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Introduction -->
-  
+    <!-- My Projects -->
 
-  <!-- Bootstrap 5 JS (Optional) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-</body>
+    <section class="portfolio">
+      <div class="container">
+        <h1>Some Of My Projects</h1>
+        <p class="para">
+          This section highlights my journey and growth as an aspiring Full
+          Stack Developer and Software Engineer. Through these projects, I have
+          honed my skills in web and software development, tackling various
+          challenges and embracing new technologies. Each one is a testament to
+          my dedication, problem-solving abilities, and passion for creating
+          impactful solutions. Feel free to explore and see the code behind the
+          work. Enjoy!
+        </p>
+        <div class="grid-container">
+          <div class="project-card">
+            <a href="#img1">
+              <img src="hotel.png" alt="Project 1" />
+            </a>
+            <h2>Hotel Website</h2>
+            <p>Short description of Project 1.</p>
+            <a
+              href="https://github.com/DevMpho/Sky-Hotel.git"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+
+          <!-- Lightbox for Project 1 -->
+          <div id="img1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="hotel.png" alt="Project 1" />
+          </div>
+
+          <div class="project-card">
+            <a href="#img2">
+              <img src="donor.png" alt="Project 2" />
+            </a>
+            <h2>Organ/Blood Donation App</h2>
+            <p>Short description of Project 2.</p>
+            <a
+              href="https://github.com/jvn310/DonorAid.git"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+
+          <!-- Lightbox for Project 2 -->
+          <div id="img2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="donor.png" alt="Project 2" />
+          </div>
+
+          <div class="project-card">
+            <a href="#img3">
+              <img src="gym.png" alt="Project 3" />
+            </a>
+            <h2>Gym Website</h2>
+            <p>Short description of Project 3.</p>
+            <a
+              href="https://github.com/DevMpho/HerPower-Fitness"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+
+          <!-- Lightbox for Project 3 -->
+          <div id="img3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="gym.png" alt="Project 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons-container">
+        <div class="icons">
+          <a
+            href="https://www.google.co.za/maps/place/Gallagher+Convention+Centre/@-26.0023428,28.1281739,17z/data=!3m1!4b1!4m6!3m5!1s0x1e956e09d35c626b:0x6ff5cc181341a2b!8m2!3d-26.0023428!4d28.1307488!16s%2Fm%2F09gc9lc?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D"
+          >
+            <i class="fa-solid fa-location-dot fa-2x"></i>
+            <p>South Africa, Midrand</p>
+          </a>
+        </div>
+
+        <div class="icons">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+          <p>cathrine@gmail.com</p>
+        </div>
+
+        <div class="icons">
+          <i class="fa-solid fa-phone fa-2x"></i>
+          <p>+27 73 554 9087</p>
+        </div>
+      </div>
+
+      <span>
+        <div class="detail">
+          <p>© Copyright 2019</p>
+        </div>
+        <div class="detail">
+          <p>Mpho Mosima v1.0.0</p>
+        </div>
+        <div class="detail">
+          <p>Made With Bootstrap</p>
+        </div>
+        <p>
+          Design components from <a href="https://uiverse.io/">uiverse.io</a>
+        </p>
+      </span>
+
+      <div class="social-media">
+        <a href="https://facebook.com">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://instagram.com">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://github.com">
+          <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
