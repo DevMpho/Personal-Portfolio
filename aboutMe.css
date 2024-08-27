@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Doodle';
+    src: url('fonts/DOODLE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .about-me-skills-container {
     border-radius: 50%;
 }
@@ -12,10 +19,8 @@
     flex-direction: column;
 }
 .center-text .fill{
+    color: white;
     
-    background: linear-gradient(to right, #ff99cc, #ffff99);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
 }
 
 .profile .fill {

@@ -173,8 +173,9 @@
             transforming ideas into functional, beautiful digital experiences.
             Welcome to my portfolio, let's create something amazing together!
           </p>
+          
           <!-- Button From Uiverse.io by StealthWorm -->
-          <button type="button" class="btn1">
+          <button type="button" class="btn1" onclick="goToHomepage()">
             <strong>More About Me</strong>
             <div id="container-stars">
               <div id="stars"></div>
@@ -291,6 +292,9 @@
 
       const lateNights = document.getElementById("late_nights");
       animateCounter(lateNights, 0, 167, 1000);
+      function goToHomepage() {
+    window.location.href = 'AboutMe.html'; // Replace 'index.html' with the path to your homepage
+}
     </script>
   </body>
 </html>
