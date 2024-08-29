@@ -12,4 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
     type(); // Start the typing effect
   });
+
+  
   
